@@ -1,0 +1,34 @@
+{
+  "name": "electron-react-template",
+  "version": "0.0.1",
+  "description": "A template for building Electron apps with React.",
+  "author": "Mark <mark@remarkablemark.org>",
+  "main": "main.js",
+  "scripts": {
+    "start": "webpack && NODE_ENV=production npm run electron",
+    "dev": "npm run hmr & NODE_ENV=development npm run electron",
+    "electron": "electron main.js",
+    "hmr": "webpack-dev-server --config webpack.development.config.js"
+  },
+  "keywords": [
+    "electron",
+    "react",
+    "template"
+  ],
+  "dependencies": {
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "electron-debug": "^0.7.0",
+    "electron-prebuilt": "^0.37.2",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "license": "MIT"
+}
